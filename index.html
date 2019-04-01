@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <FORM NAME="Calc">
+        <table BORDER=4>
+            <tr>
+                <INPUT TYPE="text"   NAME="Input" Size="16">
+            </tr>
+            <br>
+            <tr>
+                <INPUT TYPE="button" NAME="one"   VALUE="  1  " onclick="Calc.Input.value += '1'"> 
+                <INPUT TYPE="button" NAME="two"   VALUE="  2  " onclick="Calc.Input.value += '2'">
+            </tr>
+            <br>
+            <tr>
+                <INPUT TYPE="button" NAME="plus"  VALUE="  +  " onclick="Calc.Input.value += ' + '">
+                <INPUT TYPE="button" NAME="DoIt"  VALUE="  =  " onclick="Calc.Input.value = eval(Calc.Input.value)">
+            </tr>
+        </table>
+    </FORM>
+</body>
+</html>
